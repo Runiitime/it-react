@@ -4,7 +4,10 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #333;
+  color: #98D9DA;
 }
 
 .app-wrapper {
@@ -12,25 +15,19 @@ body {
   grid-template-areas: 
   "header header"
   "nav content";
-  grid-template-rows: 60px 1fr;
+  grid-template-rows: 70px 1fr;
   grid-template-columns: 2fr 10fr;
-  grid-gap: 10px;
-  width: 1200px;
+  /* grid-gap: 10px; */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 95%;
   margin: 0 auto;
 }
 
-.header {
-  grid-area: header;
-}
 
-.header img {
-  width: 60px;
-  /* height: ; */
-}
-
-.nav {
-  grid-area: nav;
-}
 
 .content {
   grid-area: content;

@@ -1,0 +1,27 @@
+.nav {
+  grid-area: nav;
+}
+
+.nav .item {
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav .item:hover {
+  background-color: #337374;
+}
+
+.nav .item:hover .item-square {
+  background-color: #337374;
+}
+
+.item .item-square {
+  width: 40px;
+  height: 40px;
+  background-color: #337374;
+  margin-right: 10px;
+}
